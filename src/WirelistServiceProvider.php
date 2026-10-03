@@ -8,6 +8,9 @@ use Illuminate\View\Compilers\BladeCompiler;
 class WirelistServiceProvider extends ServiceProvider
 {
     /**
+     * The components are anonymous, registered by path: `<x-wirelist>` is
+     * `components/wirelist/index.blade.php` and `<x-wirelist.item>` its `item.blade.php`.
+     *
      * @return void
      */
     public function boot(): void
@@ -22,8 +25,6 @@ class WirelistServiceProvider extends ServiceProvider
             __DIR__.'/../resources/css' => public_path('vendor/wirelist/css'),
         ], 'wirelist-assets');
 
-        // Anonymous components: <x-wirelist> is components/wirelist/index.blade.php and
-        // <x-wirelist.item> its item.blade.php.
         $this->callAfterResolving(BladeCompiler::class, function (BladeCompiler $blade) {
             $blade->anonymousComponentPath(__DIR__.'/../resources/views/components');
         });

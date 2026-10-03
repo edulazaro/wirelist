@@ -18,6 +18,12 @@ class ListTest extends TestCase
         $this->assertStringContainsString('class="wtl-list wtl-list-separated wtl-list-grid wtl-flush"', $grid);
     }
 
+    /**
+     * The whole item opens the record, yet its actions are a sibling of the link, never inside
+     * it: HTML does not allow interactive content in a link.
+     *
+     * @return void
+     */
     public function test_an_item_opens_its_record_without_nesting_its_actions_in_a_link(): void
     {
         $html = Blade::render(<<<'BLADE'
@@ -37,7 +43,6 @@ class ListTest extends TestCase
         $this->assertStringContainsString('<div class="wtl-item-actions"><button>⋯</button></div>', $html);
         $this->assertStringContainsString('<p>More</p>', $html);
 
-        // The actions are a sibling of the link, never inside it.
         $this->assertDoesNotMatchRegularExpression('/<a [^>]*>(?:(?!<\/a>).)*<button/s', $html);
     }
 
