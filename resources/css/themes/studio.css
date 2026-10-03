@@ -1,0 +1,6 @@
+/* wirelist theme: studio (gray-900, sharp corners).
+   Load it after wiretables' themes/studio.css, which brings the family's --wire-* values
+   and the colours lists and tables share. This file adds only what a list needs. */
+.wtl-item-title:is([data-wire-theme="studio"] *) {
+    letter-spacing: -0.01em;
+}

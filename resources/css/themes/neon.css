@@ -1,0 +1,6 @@
+/* wirelist theme: neon (dark, glowing accent, monospace).
+   Load it after wiretables' themes/neon.css, which brings the family's --wire-* values
+   and the colours lists and tables share. This file adds only what a list needs. */
+.wtl-item-title:is([data-wire-theme="neon"] *) {
+    text-shadow: 0 0 6px color-mix(in srgb, var(--wire-accent) 50%, transparent);
+}

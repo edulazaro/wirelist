@@ -1,0 +1,55 @@
+{
+    "name": "edulazaro/wirelist",
+    "description": "Lists for Laravel, Livewire and Alpine: records as divided rows, separate cards or a grid, each opening its record, with the row actions menu and load more of wiretables. Pure CSS, themed with the wire* family.",
+    "keywords": [
+        "laravel",
+        "livewire",
+        "alpine",
+        "list",
+        "cards",
+        "grid",
+        "blade",
+        "ui"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=8.2",
+        "illuminate/support": ">=11.0",
+        "illuminate/view": ">=11.0",
+        "edulazaro/wiretables": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0|^11.0|^12.0",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "livewire/livewire": "^3.0|^4.0"
+    },
+    "suggest": {
+        "livewire/livewire": "Load more and sorting through wiretables' traits."
+    },
+    "autoload": {
+        "psr-4": {
+            "EduLazaro\\Wirelist\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EduLazaro\\Wirelist\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Edu Lazaro",
+            "email": "edu@edulazaro.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EduLazaro\\Wirelist\\WirelistServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

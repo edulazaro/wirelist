@@ -1,0 +1,8 @@
+/* wirelist theme: glass (frosted).
+   Load it after wiretables' themes/glass.css, which brings the family's --wire-* values
+   and the colours lists and tables share. This file adds only what a list needs. */
+.wtl-list-divided:is([data-wire-theme="glass"] *, [data-wire-theme="glass"]),
+.wtl-list-separated:is([data-wire-theme="glass"] *, [data-wire-theme="glass"]) .wtl-item {
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+}

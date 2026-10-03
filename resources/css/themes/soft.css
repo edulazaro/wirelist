@@ -1,0 +1,7 @@
+/* wirelist theme: soft (tinted with the accent).
+   Load it after wiretables' themes/soft.css, which brings the family's --wire-* values
+   and the colours lists and tables share. This file adds only what a list needs. */
+.wtl-list-divided:is([data-wire-theme="soft"] *, [data-wire-theme="soft"]),
+.wtl-list-separated:is([data-wire-theme="soft"] *, [data-wire-theme="soft"]) .wtl-item {
+    background: color-mix(in srgb, var(--wire-accent) 4%, var(--wtb-bg));
+}

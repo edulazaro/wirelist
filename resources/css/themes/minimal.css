@@ -1,0 +1,7 @@
+/* wirelist theme: minimal (no border, a stripe of accent on the left).
+   Load it after wiretables' themes/minimal.css, which brings the family's --wire-* values
+   and the colours lists and tables share. This file adds only what a list needs. */
+.wtl-list-divided:is([data-wire-theme="minimal"] *, [data-wire-theme="minimal"]),
+.wtl-list-separated:is([data-wire-theme="minimal"] *, [data-wire-theme="minimal"]) .wtl-item {
+    border-left: 3px solid var(--wire-accent);
+}

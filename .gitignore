@@ -1,0 +1,12 @@
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+.phpunit.result.cache
+.phpunit.cache
+CLAUDE.md
+.claude/
+.DS_Store
+# Local install against ../wiretables until it is on Packagist: COMPOSER=composer.local.json composer install
+composer.local.json
+composer.local.lock

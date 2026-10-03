@@ -1,0 +1,7 @@
+/* wirelist theme: megaflow (Flowbite-style clean white card).
+   Load it after wiretables' themes/megaflow.css, which brings the family's --wire-* values
+   and the colours lists and tables share. This file adds only what a list needs. */
+.wtl-item-header:is([data-wire-theme="megaflow"] *) {
+    background: var(--wtb-head-bg);
+    color: var(--wtb-head-text);
+}

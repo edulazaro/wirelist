@@ -1,0 +1,8 @@
+/* wirelist theme: brutalist (black border, hard offset shadow, yellow strip).
+   Load it after wiretables' themes/brutalist.css, which brings the family's --wire-* values
+   and the colours lists and tables share. This file adds only what a list needs. */
+.wtl-item-header:is([data-wire-theme="brutalist"] *) {
+    background: #fef08a;
+    color: #0a0a0a;
+    border-bottom-width: 2px;
+}

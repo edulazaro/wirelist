@@ -1,0 +1,6 @@
+/* wirelist theme: chatgpt (clean neutral, rounder).
+   Load it after wiretables' themes/chatgpt.css, which brings the family's --wire-* values
+   and the colours lists and tables share. This file adds only what a list needs. */
+.wtl-list-grid:is([data-wire-theme="chatgpt"] *, [data-wire-theme="chatgpt"]) {
+    --wtl-grid-gap: 20px;
+}

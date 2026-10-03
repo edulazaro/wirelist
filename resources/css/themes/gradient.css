@@ -1,0 +1,8 @@
+/* wirelist theme: gradient (a stripe of the accent's gradient on the left).
+   Load it after wiretables' themes/gradient.css, which brings the family's --wire-* values
+   and the colours lists and tables share. This file adds only what a list needs. */
+.wtl-list-divided:is([data-wire-theme="gradient"] *, [data-wire-theme="gradient"]),
+.wtl-list-separated:is([data-wire-theme="gradient"] *, [data-wire-theme="gradient"]) .wtl-item {
+    border-left: 4px solid transparent;
+    border-image: linear-gradient(180deg, var(--wire-accent), color-mix(in srgb, var(--wire-accent) 55%, #000000)) 1;
+}

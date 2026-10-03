@@ -1,0 +1,8 @@
+/* wirelist theme: claude (warm minimal, a line of accent on top).
+   Load it after wiretables' themes/claude.css, which brings the family's --wire-* values
+   and the colours lists and tables share. This file adds only what a list needs. */
+.wtl-list-divided:is([data-wire-theme="claude"] *, [data-wire-theme="claude"]),
+.wtl-list-separated:is([data-wire-theme="claude"] *, [data-wire-theme="claude"]) .wtl-item {
+    border-top: 2px solid var(--wire-accent);
+    letter-spacing: -0.005em;
+}

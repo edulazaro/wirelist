@@ -1,0 +1,11 @@
+/* wirelist theme: synthwave (retro purple and magenta).
+   Load it after wiretables' themes/synthwave.css, which brings the family's --wire-* values
+   and the colours lists and tables share. This file adds only what a list needs. */
+.wtl-list-divided:is([data-wire-theme="synthwave"] *, [data-wire-theme="synthwave"]),
+.wtl-list-separated:is([data-wire-theme="synthwave"] *, [data-wire-theme="synthwave"]) .wtl-item {
+    background: linear-gradient(135deg, #1a0033 0%, #2d0066 100%);
+    letter-spacing: 0.04em;
+}
+.wtl-item-title:is([data-wire-theme="synthwave"] *) {
+    text-shadow: 0 0 8px var(--wire-accent);
+}
