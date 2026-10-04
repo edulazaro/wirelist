@@ -8,7 +8,7 @@ namespace EduLazaro\Wirelist\Support;
 final class Css
 {
     /** The themes, in the family's order: the same as wiretables'. */
-    public const THEMES = ['soft', 'glass', 'gradient', 'neon', 'minimal', 'claude', 'chatgpt', 'studio', 'synthwave', 'megaflow', 'brutalist'];
+    public const THEMES = ['soft', 'glass', 'gradient', 'neon', 'minimal', 'claude', 'chatgpt', 'studio', 'synthwave', 'megaflow', 'brutalist', 'toxic'];
 
     /**
      * The core and every theme, as `wirelist.css` holds them.

@@ -4,7 +4,7 @@
 
 Lists for Laravel, Livewire and Alpine: records as divided rows, separate cards or a grid, each one opening its record, with a row actions menu and load more. Pure CSS, no Tailwind or Bootstrap needed. Built on [wiretables](https://github.com/edulazaro/wiretables) and part of the `wire*` family: themeable through the shared `data-wire-theme` attribute, coherent with [wiremodal](https://github.com/edulazaro/wiremodal), [wiretoast](https://github.com/edulazaro/wiretoast) and [wirepicker](https://github.com/edulazaro/wirepicker).
 
-Divided, separated or grid · the whole card opens the record · badges, aside, actions · load more · 11 themes · 0 runtime deps.
+Divided, separated or grid · the whole card opens the record · badges, aside, actions · load more · 12 themes · 0 runtime deps.
 
 ## When a list and when a table
 
@@ -131,7 +131,7 @@ Any other attribute (`class`, `wire:key`, `data-*`) lands on the element.
 
 ## Themes
 
-The family's 11 themes, by the same `data-wire-theme` attribute on `<html>`: soft, glass, gradient, neon, minimal, claude, chatgpt, studio, synthwave, megaflow and brutalist, each with its dark mode. wiretables' theme file brings the colours tables and lists share; this package's file of the same name adds what only a list needs: minimal's and gradient's stripe on the left, claude's line on top, glass's blur, synthwave's gradient, the header strip's colours.
+The family's 12 themes, by the same `data-wire-theme` attribute on `<html>`: soft, glass, gradient, neon, minimal, claude, chatgpt, studio, synthwave, megaflow, brutalist and toxic, each with its dark mode (toxic, like neon, is dark only). wiretables' theme file brings the colours tables and lists share; this package's file of the same name adds what only a list needs: minimal's and gradient's stripe on the left, claude's line on top, glass's blur, synthwave's gradient, toxic's lime titles and lit edge, the header strip's colours.
 
 ## Custom look
 

@@ -380,3 +380,16 @@ button.wtl-item-title {
     color: #0a0a0a;
     border-bottom-width: 2px;
 }
+
+/* wirelist theme: toxic (swamp dark, lime accent).
+   Load it after wiretables' themes/toxic.css, which brings the family's --wire-* values
+   and the colours lists and tables share. This file adds only what a list needs: a card
+   that opening would follow lights its edge, and titles take the accent. */
+.wtl-item-title:is([data-wire-theme="toxic"] *) {
+    color: var(--wire-accent);
+}
+@media (hover: hover) {
+    .wtl-list-separated:is([data-wire-theme="toxic"] *, [data-wire-theme="toxic"]) .wtl-item-linked:hover {
+        box-shadow: 0 0 0 1px var(--wire-border-strong), 0 0 18px rgba(163, 230, 53, 0.12);
+    }
+}
